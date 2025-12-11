@@ -1,0 +1,14 @@
+services:
+  poster-bot:
+    build: .
+    container_name: poster-bot
+    restart: on-failure
+    env_file:
+      - config.env
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - bot-network
+networks:
+  bot-network:
+    driver: bridge

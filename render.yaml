@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: poster-bot
+    env: docker
+    region: Frankfurt
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerCommand: bash start.sh
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_NAME
+        value: ebotz
+      - key: OWNER_ID
+        sync: false
+      - key: SUDO_USERS
+        sync: false
+      - key: AUTH_CHATS
+        sync: false
+      - key: PUBLIC_MODE
+        value: "True"
+      - key: WEB_SERVER
+        value: "true" 
+      - key: PING_URL
+        value: ""
+      - key: PING_TIME
+        value: "300"
+      - key: TIMEZONE
+        value: Asia/Kolkata
+      - key: UPSTREAM_REPO
+        value: https://github.com/the-piro/pstr
+      - key: UPSTREAM_BRANCH
+        value: main
+      - key: TMDB_ACCESS_TOKEN
+        sync: false
+      - key: PORT
+        value: "80"
