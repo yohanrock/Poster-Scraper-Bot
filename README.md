@@ -398,4 +398,4 @@ This bot is developed strictly for **educational and research purposes only**.
 
 If you like this project, don't forget to give it a Star !
 
-**Developer:** [@TheZake](https://t.me/TheZake)
+**Developer:** [@PosterDLBot](https://t.me/+rurOI-O9ciozYjVl)
