@@ -26,8 +26,8 @@ async def _strt(client, message):
             message,
             echo.ABC,
             buttons=btns,
-            photo=echo.IMG,
-            has_spoiler=True,
+            #photo=echo.IMG,
+            #has_spoiler=True,
         )
     except Exception as e:
         LOGGER.error(str(e))

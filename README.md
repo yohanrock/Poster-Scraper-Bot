@@ -6,9 +6,17 @@ Powerful telegram bot that scrape Posters from multiple OTT platforms & Bypass d
 <summary><strong>DDL Bypass Sites</strong></summary>
 
 - Gdflix
+- Extraflix 
 - Hubdrive
 - Hubcloud
-- Transfer.it
+- Hubcdn
+- Transfer-it
+- Driveleech
+- Neolinks
+- GDRex
+- PixelCDN
+- ExtraLink
+- LuxDrive
 
 </details>
 
@@ -51,9 +59,17 @@ Powerful telegram bot that scrape Posters from multiple OTT platforms & Bypass d
 /imdb - Search movie/series on IMDb
 /anime - Search Anime on Anilist
 /gdflix - Bypass GDFlix links to direct links
+/extraflix - Bypass ExtraFlix links to direct links
 /hubcloud - Bypass HubCloud links to direct links
 /hubdrive - Bypass Hubdrive links to direct links
 /transfer_it - Bypass Transfer.it links to direct links
+/hubcdn - Bypass HubCDN links to direct links
+/driveleech - Bypass DriveLeech links to direct links
+/neo - Bypass NeoLinks links to direct links
+/gdrex - Bypass GDRex links to direct links
+/pixelcdn - Bypass PixelCDN links to direct links
+/extralink - Bypass ExtraLink links to direct links
+/luxdrive - Bypass LuxDrive links to direct links
 /overlap - Overlay a logo on a poster
 /prime - Prime Video poster
 /netflix - Netflix poster
@@ -138,14 +154,13 @@ Powerful telegram bot that scrape Posters from multiple OTT platforms & Bypass d
 Before starting, ensure you have:
 - Docker installed ([Installation Guide](https://docs.docker.com/engine/install/))
 - Docker Compose installed ([Installation Guide](https://docs.docker.com/compose/install/))
-- Git installed
 
 ### Installation Steps
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/XalFH/Poster-Scraper-Bot
-   cd Poster-Scraper-Bot
+   git clone https://github.com/XalFH/Poster-Scraper-Bot psb
+   cd psb
    ```
 
 2. **Setup Configuration File**
@@ -162,8 +177,6 @@ Before starting, ensure you have:
    BOT_TOKEN=your_bot_token
    DATABASE_URL=your_mongodb_url
    OWNER_ID=your_telegram_user_id
-   UPSTREAM_REPO=https://github.com/XalFH/Poster-Scraper-Bot
-   UPSTREAM_BRANCH=main
    ```
    
    Save and exit (`Ctrl + X`, then `Y`, then `Enter`)
@@ -222,7 +235,7 @@ docker-compose down -v
 
 2. **Clone Repository & switch to deploy branch**
    ```bash
-   git clone https://github.com/XalFH/Poster-Scraper-Bot && cd Poster-Scraper-Bot && git checkout deploy
+   git clone https://github.com/XalFH/Poster-Scraper-Bot psb && cd psb && git checkout deploy
    ```
 
 3. **Create config.env file**

@@ -19,6 +19,15 @@ def _sexy(name):
         "hubcloud": "HubCloud",
         "hubdrive": "HubDrive",
         "transfer_it": "Transfer.it",
+        "vcloud": "VCloud",
+        "hubcdn": "HubCDN",
+        "driveleech": "DriveLeech",
+        "neo": "NeoLinks",
+        "gdrex": "GDRex",
+        "pixelcdn": "PixelCDN",
+        "extraflix": "ExtraFlix",
+        "extralink": "ExtraLink",
+        "luxdrive": "LuxDrive",
     }
     return mapping.get(name, name.title())
 
@@ -100,3 +109,4 @@ async def _bypass_cmd(client, message):
             )
         except Exception:
             pass
+        

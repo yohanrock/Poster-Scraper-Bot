@@ -31,6 +31,15 @@ class BotCommands:
             "hubcloud", "hc",
             "hubdrive", "hd",
             "transfer_it", "ti",
+            "vcloud", "vc",
+            "hubcdn", "hcdn",
+            "driveleech", "dleech",
+            "neo", "neolinks",
+            "gdrex", "gdex",
+            "pixelcdn", "pixeldrain",
+            "extraflix",
+            "extralink",
+            "luxdrive",
         ],
         "Authorize": ["authorize", "a"],
         "UnAuthorize": ["unauthorize", "ua"],
@@ -50,9 +59,18 @@ BotCommands.build()
 CMD_HELP = {
     "poster": "Scrape any movie/show poster",
     "gdflix": "Bypass GDFlix links to direct links",
+    "extraflix": "Bypass ExtraFlix links to direct links",
     "hubcloud": "Bypass HubCloud links to direct links",
+    "vcloud": "Bypass VCloud links to direct links",
     "hubdrive": "Bypass Hubdrive links to direct links",
     "transfer_it": "Bypass Transfer.it links to direct links",
+    "hubcdn": "Bypass HubCDN links to direct links",
+    "driveleech": "Bypass DriveLeech links to direct links",
+    "neo": "Bypass NeoLinks links to direct links",
+    "gdrex": "Bypass GDRex links to direct links",
+    "pixelcdn": "Bypass PixelCDN links to direct links",
+    "extralink": "Bypass ExtraLink links to direct links",
+    "luxdrive": "Bypass LuxDrive links to direct links",
     "imdb": "Search Movie/Series on IMDb",
     "anime": "Search Anime on Anilist",
     "prime": "Scrape Prime Video poster from URL",
@@ -68,7 +86,7 @@ CMD_HELP = {
     "plex": "Scrape Plex TV poster from URL",
     "adda": "Scrape Addatimes poster from URL",
     "stage": "Scrape Stage poster from URL",
-    "netflix": "Scrape Netflix poster from URL",
+    "netflix": "Scrape Netflix poster fom URL",
     "youtube": "Scrape YouTube thumbnail from URL",
     "instagram": "Scrape Instagram thumbnail from URL",
     "facebook": "Scrape Facebook thumbnail from URL",
@@ -86,3 +104,4 @@ CMD_HELP = {
 
 def _get_bot_commands():
     return [BotCommand(cmd, desc) for cmd, desc in CMD_HELP.items()]
+    
