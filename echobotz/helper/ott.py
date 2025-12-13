@@ -89,7 +89,7 @@ _WORKERS = {
     "plextv": "https://plextv.the-zake.workers.dev/?url=",
     "addatimes": "https://addatimes.the-zake.workers.dev/?url=",
     "stage": "https://stage.the-zake.workers.dev/?url=",
-    "netflix": "ttps://netflix.the-zake.workers.dev/?url=",
+    "netflix": "https://netflix.the-zake.workers.dev/?url=",
     "mxplayer": "https://mxplayer.the-zake.workers.dev/?url=",
 
     "ytdl": "https://youtubedl.the-zake.workers.dev/?url=",
